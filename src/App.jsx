@@ -11,7 +11,7 @@ export default function App() {
   }
 
   useEffect(()=>{
-    document.body.background = isDarkMode ? '#333' : "white"
+    document.body.style.background = isDarkMode ? '#333' : "white"
     document.body.style.color = isDarkMode ? "white" : "#333"
   }, [isDarkMode])
 
