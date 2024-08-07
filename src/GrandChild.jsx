@@ -1,4 +1,9 @@
-export function GrandChild({ isDarkMode, toggleTheme}){
+import { useContext } from "react"
+import { ThemeContext } from "./App"
+
+export function GrandChild(){
+   const [isDarkMode, toggleTheme] = useContext(ThemeContext)
+   
     return (
         <button style={{
             background: isDarkMode ? "white" : "#333",
