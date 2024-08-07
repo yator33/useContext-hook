@@ -1,8 +1,7 @@
-import { useContext } from "react"
 import { ThemeContext } from "./App"
 
-export function ClassGrandChild(){
-   const { isDarkMode, toggleTheme } = useContext( ThemeContext )
+export class ClassGrandChild extends React.Component {
+   render(){
 
     return (
       <ThemeContext.Consumer>
@@ -24,4 +23,7 @@ export function ClassGrandChild(){
         )}
       </ThemeContext.Consumer>
     )
+  }
 }
+
+//using classes
