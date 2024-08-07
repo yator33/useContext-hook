@@ -2,9 +2,10 @@ import { useContext } from "react"
 import { ThemeContext } from "./App"
 
 export function GrandChild(){
-   const [isDarkMode, toggleTheme] = useContext(ThemeContext)
-   
+   const [ isDarkMode, toggleTheme ] = useContext( ThemeContext )
+
     return (
+        <>
         <button style={{
             background: isDarkMode ? "white" : "#333",
             color: isDarkMode ? "#333" : "white",
@@ -18,5 +19,6 @@ export function GrandChild(){
         >
           Toggle Theme
           </button> 
+          </>
     )
 }
